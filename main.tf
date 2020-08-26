@@ -11,6 +11,10 @@ variable "aws_secret_key" {
   type    = string
 }
 
+variable "another_default_var" {
+  type    = string
+}
+
 resource "random_id" "random" {
   keepers = {
     uuid = "${uuid()}"
